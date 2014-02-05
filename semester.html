@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <title>Semesterdagberäknaren</title>
+       <link rel='stylesheet' type='text/css' href='style.css'/>
+         <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script type='text/javascript' src='script.js'></script>
+      <meta charset="UTF-8">
+	 </head>
+   
+<body><!--HÄR BÖRJAR BODYN-->
+  
+    <header><!--HÄR BÖRJAR HEADERN-->
+      <h1>Semesterdagberäknaren</h1>
+    </header><!--HÄR SLUTAR HEADERN-->
+
+
+        <div id="signup">
+ 	  <form class="fyllin" name="input" action="" method="get"><!--HÄR BÖRJAR FORMEN-->
+      <fieldset>
+        <legend>FYLL I INFORMATIONEN I ALLA FÄLT</legend>
+
+     <!--DATEPICKER ANSTÄLLNINGSDATUM BÖRJAR HÄR-->
+             <input class="left" type="text" id="startDate" placeholder="Välj datum för perioden när semstrrätten börjar" required >
+        
+     <!--BÖRJAN PÅ SEMSTER ÅRET SISTA DAG -->
+    <input class="vacation" type="text" id="endDate" placeholder="Välj datum för perioden när semstrrätten slutar" required><!--SLUTET PÅ SEMSTER ÅRET SISTA DAG -->
+
+     
+    <!--BÖRJAN PÅ ANTAL SEMESTERRÄTTT DAGAR INPUT-->
+        <input class="away" id="novacationright" type="number" name="quantity" min="1" max="300" placeholder="Antal ej semestergrundan frånvaro i heldagar" required>
+    <!--SLUTET PÅ ANTAL SEMESTERRÄTTT DAGAR INPUT-->
+
+     <!--BÖRJAN PÅ ANTAL SEMESTERRÄTT DAGAR INPUT-->
+        <input class="vacationdays" id="vacationright" type="number" name="quantity" min="1" max="300" placeholder="Semesterrätt i dagar t ex 25, 30 eller 31 " required>
+    <!--SLUTET PÅ ANTAL SEMESTERRÄTTT DAGAR INPUT-->
+
+   
+    <input id="button" class="submit" type="submit" value="Beräkna">
+    <input id="Reset" class="tabort" type="reset" value="Ångra!">
+
+  <p id="result"></p>
+
+  </fieldset>
+</form><!--HÄR SLUTAR FORMEN-->
+
+</div>
+
+<footer>	</footer>
+
+</body><!--HÄR SLUTAR BODYN-->
+</html>
+
+
+
+  
+ 
